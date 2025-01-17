@@ -1,0 +1,484 @@
+LOAD 	version2,
+	Snapshot_Date,
+    Extended_Bucket,
+    Business_Break_up,
+    PRV_Business_Break_up,
+    Borrower_Segmentation,
+	Account_Segmentation, 
+    Galaxy_Orion_Flag,
+    Extended_Bckt,
+	Non_Core_Flag_f as      Non_Core_Flag,
+	prv_Non_Core_Flag_f as prv_Non_Core_Flag,
+    Covid_Residual_Maturity_Buck as Covid_Residual_Maturity_Buckets,
+	Covid_Implementation_Flag_f as Covid_Implementation_Flag,
+	Covid_Extension_Indicator_f as Covid_Extension_Indicator,
+	Covid_Implementation_Unit_f as Covid_Implementation_Unit,
+	Covid_Public_Guarantee_Indica as Covid_Public_Guarantee_Indicator,
+	Tepix_Covid_Flag_f as Tepix_Covid_Flag,
+    OpCo_Solo_f as OpCo_Solo,
+    HoldCo_Solo_f as HoldCo_Solo,
+    FPL_Under_Probation_Indicator_f as FPL_Under_Probation_Indicator,
+    Performed_in_f as Performed_in_Q,
+Origination_M,
+Origination_Q,
+    Covid_Implementation_Date2 as Covid_Implementation_month,
+	PRV_Account_Segmentation,
+	UTP_Indicator,
+	EBA_Status,
+	PRV_EBA_STATUS,
+	NPL_Indicator_With_Materiality,
+	Extended_Bckt_Cgy_With_Mtlt,
+	Black_List_Code,
+	Forbearance_Type,
+	FINREP_AssetClass,
+	ECA_tbl4_Status_contam,
+	ECA_tbl4_PRV_Status,
+	ECA_tbl4_Status_current,
+	Account_Source_System_Code,
+	PRV_Account_Source_System_Code,
+	HFS,
+	PRV_HFS,
+	Booking_Entity_Code,
+	PRV_Booking_Entity_Code,
+	Originating_Entity_Code,
+	PRV_Originating_Entity_Code,
+	State_Guarantee_Flag,
+	Forbearance_Flag,
+	Grace_Period_Flag,
+	Fast_Track_Flag,
+	Forced_Prenotation_Flag,
+	IFRS_9_Classification_Flag,
+	Bucket_gt_1_last_12M_Flag,
+	Unsecured_ST_Flag,
+	CRE_Stocktake_Flag,
+	Litigation_Flag,
+	PRV_CRE_Stocktake_Flag,
+	PRV_IFRS_9_Classification_Flag,
+	PRV_NPL_FLAG,
+	PRV_Litigation_Flag,
+	WOff_Flag_B,
+	WOff_Flag_C,
+	Application_Legal_Indicator,
+	Liquidation_Type,
+	Denounced_Actions,
+	Denouncement_Indicator,
+	IFRS_AssetClass,
+	IFRS_IndustrySector,
+	FINREP_CRE,
+	PublicSector,
+	StateRelated,
+	Monitoring_Unit_Code,
+	Monitoring_Unit_Code_Description,
+	PRV_FINREP_AssetClass,
+	FINREP_Industry,
+	HFS_Portfolio,
+    Elimination_Indicator,
+	COUNT_of_Account_ID,
+	COUNT_of_Booking_Entity_Code,
+	IFRS_Gross_Amount_ECA_tbl4,
+	Gross_Interest,
+	WOff_Amount_A8,
+	IFRS_Gross_Carrying_Amt,
+	IFRS_Gross_Reported,
+	Fair_Value_Adjustments_FVPL,
+	Total_Provisions_On_Reported as Total_Provisions_Rep,
+	Total_Provisions_On_Balance,
+	Unallocated_FVA,
+	NetCarryingAmount,
+	WOff_Total_nonInitiative as  Woffs,
+	CollECA_Total,
+	CollFinrepTotalExclGuar,
+	Net_interest,
+	impairment_charge_on,
+	impairment_charge_off,
+	PRV_IFRS9_Gross_Amount,
+	PRV_IFRS_Gross_Reported,
+	PRV_Provisions_On_Reported,
+	 PRV_Off_Balance,
+	 Payments,
+	Liquidations,
+	Scheduled_Payments,
+	Disbursements,
+	Sales,
+	Purchases,
+	Debt_to_Equity,
+	Cards_Interest,
+	Sales_Recovery,
+    Loan_Transfers,
+	Writeoff_Transactions,
+    Other_Trans_EED,
+	Other_Transactions,
+	CollCapECA_Cash,
+	CollCapECA_RRE,
+	CollCapECA_CRE,
+	CollCapECA_ORE,
+	CollCapECA_VES,
+	CollCapECA_TBil,
+	CollCapECA_GGG,
+	CollCapECA_SRec,
+	CollCapECA_Inv,
+	CollCapECA_ARec,
+	CollCapECA_Ind,
+	CollCapECA_OFG,
+	CollCapECA_Oth,
+	CollCapECA_CorpGuar,
+	CollCapECA_PersGuar,
+	CollECA_Total_OffBalance,
+	CollCapIR,
+	CollValue_incl_FGuar,
+	CollValue_Total,
+    Inflow_npe,
+    outflow_npe,
+    accrued_interest, 
+   Solo_Flag,
+    NPE_GROUP,
+    NPE_FLOW_f,
+    final_Balance,
+      NPL_GROUP,
+    NPL_FLOW_f,
+    final_Balance2, 
+PRV_M_HFS_f,
+PRV_M_IFRS_Gross_Reported,
+PRV_M_EBA_Status_f,
+PRV_M_NPL_FLAG_f,
+Perimeter_ECA6,
+Step_Up_Indicator_f,
+Settlements_Indicator_f,
+NPE_GROUP_M,
+NPE_FLOW_f_m,
+final_Balance3,
+NPL_GROUP_M,
+NPL_FLOW_f_m,
+final_Balance4,
+Project_Finance_Indicator
+    ;SQL SELECT version2,
+	Snapshot_Date,
+	Borrower_Segmentation,
+    Account_Segmentation,
+     Galaxy_Orion_Flag,
+    Extended_Bckt,
+	Non_Core_Flag_f,
+	prv_Non_Core_Flag_f,
+    Covid_Residual_Maturity_Buck,
+	Covid_Implementation_Flag_f,
+	Covid_Extension_Indicator_f,
+	Covid_Implementation_Unit_f,
+	Covid_Public_Guarantee_Indica,
+	Tepix_Covid_Flag_f,
+    OpCo_Solo_f,
+    HoldCo_Solo_f,
+    FPL_Under_Probation_Indicator_f,
+    Performed_in_f,
+Origination_M,
+Origination_Q,
+    Covid_Implementation_Date2,
+	PRV_Account_Segmentation,
+	UTP_Indicator,
+	EBA_Status,
+	PRV_EBA_STATUS,
+	NPL_Indicator_With_Materiality,
+	Extended_Bckt_Cgy_With_Mtlt,
+	Black_List_Code,
+	Forbearance_Type,
+	FINREP_AssetClass,
+	ECA_tbl4_Status_contam,
+	ECA_tbl4_PRV_Status,
+	ECA_tbl4_Status_current,
+	Account_Source_System_Code,
+	PRV_Account_Source_System_Code,
+	HFS,
+	PRV_HFS,
+	Booking_Entity_Code,
+	PRV_Booking_Entity_Code,
+	Originating_Entity_Code,
+	PRV_Originating_Entity_Code,
+	State_Guarantee_Flag,
+	Forbearance_Flag,
+	Grace_Period_Flag,
+	Fast_Track_Flag,
+	Forced_Prenotation_Flag,
+	IFRS_9_Classification_Flag,
+	Bucket_gt_1_last_12M_Flag,
+	Unsecured_ST_Flag,
+	CRE_Stocktake_Flag,
+	Litigation_Flag,
+	PRV_CRE_Stocktake_Flag,
+	PRV_IFRS_9_Classification_Flag,
+	PRV_NPL_FLAG,
+	PRV_Litigation_Flag,
+	WOff_Flag_B,
+	WOff_Flag_C,
+	Application_Legal_Indicator,
+	Liquidation_Type,
+	Denounced_Actions,
+	Denouncement_Indicator,
+	IFRS_AssetClass,
+	IFRS_IndustrySector,
+	FINREP_CRE,
+	PublicSector,
+	StateRelated,
+	Monitoring_Unit_Code,
+	Monitoring_Unit_Code_Description,
+	PRV_FINREP_AssetClass,
+	FINREP_Industry,
+	HFS_Portfolio,
+    Elimination_Indicator,
+	COUNT_of_Account_ID,
+	COUNT_of_Booking_Entity_Code,
+	IFRS_Gross_Amount_ECA_tbl4,
+	Gross_Interest,
+	WOff_Amount_A8,
+	IFRS_Gross_Carrying_Amt,
+	IFRS_Gross_Reported,
+	Fair_Value_Adjustments_FVPL,
+	Total_Provisions_On_Reported,
+	Total_Provisions_On_Balance,
+	Unallocated_FVA,
+	NetCarryingAmount,
+	WOff_Total_nonInitiative,
+	CollECA_Total,
+	CollFinrepTotalExclGuar,
+	Net_interest,
+	impairment_charge_on,
+	impairment_charge_off,
+	PRV_IFRS9_Gross_Amount,
+	PRV_IFRS_Gross_Reported,
+	PRV_Provisions_On_Reported,
+	 PRV_Off_Balance,
+	 Payments,
+	Liquidations,
+	Scheduled_Payments,
+	Disbursements,
+	Sales,
+	Purchases,
+	Debt_to_Equity,
+	Cards_Interest,
+	Sales_Recovery,
+    Loan_Transfers,
+	Writeoff_Transactions,
+    Other_Trans_EED,
+	Other_Transactions,
+	CollCapECA_Cash,
+	CollCapECA_RRE,
+	CollCapECA_CRE,
+	CollCapECA_ORE,
+	CollCapECA_VES,
+	CollCapECA_TBil,
+	CollCapECA_GGG,
+	CollCapECA_SRec,
+	CollCapECA_Inv,
+	CollCapECA_ARec,
+	CollCapECA_Ind,
+	CollCapECA_OFG,
+	CollCapECA_Oth,
+	CollCapECA_CorpGuar,
+	CollCapECA_PersGuar,
+	CollECA_Total_OffBalance,
+	CollCapIR,
+	CollValue_incl_FGuar,
+	CollValue_Total,
+    Inflow_npe,
+    outflow_npe,
+    accrued_interest,
+    Solo_Flag,
+    case when Extended_Bckt = '0 dpd' then  '01.0 dpd' 
+    when Extended_Bckt = '1-30 dpd' then   '02.1-30 dpd'
+    when Extended_Bckt = '30-60 dpd' then  '03.30-60 dpd'
+    when Extended_Bckt = '60-90 dpd' then  '04.60-90 dpd'
+    when Extended_Bckt = '3m-6m' then      '05.3m-6m'
+    when Extended_Bckt = '6m-1y' then      '06.6m-1y'
+    when Extended_Bckt = '1y-2y' then      '07.1y-2y'
+    when Extended_Bckt = '2y-5y' then      '08.2y-5y'
+    when Extended_Bckt = '5y-7y' then      '09.5y-7y'
+    when Extended_Bckt = '7y+' then        '10.7y+'  else '' end as Extended_Bucket,
+    case when Account_Segmentation in ( '1' '2' '3')  then  'Wholesale' 
+         when Account_Segmentation in ( '4' '5' '6' '7')  then  'Retail'   else '' end as Business_Break_up ,
+    case when prv_Account_Segmentation in ( '1' '2' '3')  then  'Wholesale' 
+    when prv_Account_Segmentation in ( '4' '5' '6' '7')  then  'Retail'   else '' 
+    end as PRV_Business_Break_up,
+     case when NPE_FLOW in ('NPE Balance Change' 'NPE Balance Change/Inflows' 'NPE Balance Change/Outflows' ) 
+       OR (hfs = '1' or prv_hfs = '1')                                                                         then '3.Other'
+   
+          when NPE_FLOW in ('C-FPL to FNPL remodified' 'C-FPL to FNPL rolled' 'FPL to FNPL' 'FPL to NPL' 'New account to NPE' 
+                   'PL to FNPL' 'PL to NPL' )                                                                  then '1. Inflows'
+          when NPE_FLOW in ('Exit account from NPE' 'FNPL to FPL' 'FNPL to PL' 'NPL to FPL' 'NPL to PL' )      then '2.Outflows'
+            end as NPE_GROUP,
+     case
+          when calculated NPE_GROUP = '1. Inflows'  and NPE_FLOW = 'PL to NPL'                      then '1.PL to NPL'
+          when calculated NPE_GROUP = '1. Inflows'  and NPE_FLOW = 'PL to FNPL'                     then '2.PL to FNPL'
+          when calculated NPE_GROUP = '1. Inflows'  and NPE_FLOW = 'C-FPL to FNPL rolled'           then '3.C-FPL to FNPL rolled'
+          when calculated NPE_GROUP = '1. Inflows'  and NPE_FLOW = 'C-FPL to FNPL remodified'       then '4.C-FPL to FNPL remodified'
+          when calculated NPE_GROUP = '1. Inflows'  and NPE_FLOW = 'FPL to NPL'                     then '5.FPL to NPL'
+          when calculated NPE_GROUP = '1. Inflows'  and NPE_FLOW = 'FPL to FNPL'                    then '6.FPL to FNPL'
+          when calculated NPE_GROUP = '1. Inflows'  and NPE_FLOW = 'New account to NPE'             then '7.New account to NPE'
+          when calculated NPE_GROUP = '2.Outflows'  and NPE_FLOW = 'FNPL to FPL'                    then '1.FNPL to FPL'
+          when calculated NPE_GROUP = '2.Outflows'  and NPE_FLOW = 'FNPL to PL'                     then '2.FNPL to PL'
+          when calculated NPE_GROUP = '2.Outflows'  and NPE_FLOW = 'NPL to FPL'                     then '3.NPL to FPL'
+          when calculated NPE_GROUP = '2.Outflows'  and NPE_FLOW = 'NPL to PL'                      then '4.NPL to PL'
+          when calculated NPE_GROUP = '2.Outflows'  and NPE_FLOW = 'Exit account from NPE'          then '5.Exit account from NPE'
+          when calculated NPE_GROUP = '3.Other'     and (hfs = '1' or prv_hfs = '1') and Account_Source_System_Code nE 'LEA'   then '1.Due to transfer to/from HFS'
+          when calculated NPE_GROUP = '3.Other'     and NPE_FLOW = 'NPE Balance Change'             then '2.NPE Balance Change'
+          when calculated NPE_GROUP = '3.Other'     and NPE_FLOW = 'NPE Balance Change/Inflows'     then '3.NPE Balance Change/Inflows'
+          when calculated NPE_GROUP = '3.Other'     and NPE_FLOW = 'NPE Balance Change/Outflows'    then '4.NPE Balance Change/Outflows'
+end as NPE_FLOW_f,
+CASE WHEN hfs ne '1' and eba_status in ('FNPL' 'NPL' )  then IFRS_Gross_Reported else 0             end as npe_IFRS_Gross_Reported,
+case when prv_hfs ne '1' and prv_eba_status in ('FNPL' 'NPL' ) then prv_IFRS_Gross_Reported*primary_indicator else 0  end  as npe_PRV_IFRS_Gross_Reported,
+case     when calculated NPE_GROUP = '1. Inflows'                   then calculated npe_IFRS_Gross_Reported  
+         when calculated NPE_GROUP = '2.Outflows'                   then - calculated npe_PRV_IFRS_Gross_Reported
+         when calculated NPE_GROUP = '3.Other'                      then calculated npe_IFRS_Gross_Reported- calculated  npe_PRV_IFRS_Gross_Reported  else 0 
+                                                                                                    end as final_Balance,
+     case when NPL_FLOW in ('90+ Balance Change' '90+ Balance Change/Inflows' '90+ Balance Change/Outflows' )  
+     OR (hfs = '1' or prv_hfs = '1')                                                                                      then '3.Other'    
+     
+         when  NPL_FLOW in ('FNPL <90dpd to FNPL >90dpd' 'FNPL <90dpd to NPL' 'FPL to FNPL >90dpd' 'New account to 90+' 'PL to NPL >90dpd'
+//  NPL_Flow Change  SKAR 6/3/2023        
+         'PL <90dpd to NPL >90dpd' 'NPL <90dpd to NPL >90dpd'
+//          
+    'PL to FNPL >90dpd' 'FPL to NPL >90dpd' 'C-FPL to NPL >90dpd' )                                                       then '1. Inflows'
+         when NPL_FLOW in ('Exit from 90+' 'FNPL >90dpd to FNPL <90dpd' 'FNPL >90dpd to FPL' 'FNPL >90dpd to PL' 'NPL to FNPL <90dpd' 'NPL to FPL' 'NPL to PL' 
+//  NPL_Flow Change  SKAR 6/3/2023           
+	'NPL >90dpd to <90dpd' 'NPL >90dpd to FNPL <90dpd' 'NPL >90dpd to FPL <90dpd'
+//     
+    'FNPL >90dpd to NPL <90dpd')                                                                                          then '2.Outflows'
+          end as NPL_GROUP 
+   ,case
+    when calculated NPL_GROUP = '1. Inflows'  and NPL_FLOW = 'PL to NPL >90dpd' then '1.PL to NPL >90dpd'
+    when calculated NPL_GROUP = '1. Inflows'  and NPL_FLOW = 'PL to FNPL >90dpd' then '3.PL to FNPL >90dpd'
+   when calculated NPL_GROUP = '1. Inflows'  and NPL_FLOW = 'FPL to NPL >90dpd' then '4.FPL to NPL >90dpd'
+//  NPL_Flow Change  SKAR 6/3/2023   
+when calculated NPL_GROUP = '1. Inflows'  and NPL_FLOW = 'PL <90dpd to NPL >90dpd' then '1.PL <90dpd to NPL >90dpd'
+when calculated NPL_GROUP = '1. Inflows'  and NPL_FLOW = 'NPL <90dpd to NPL >90dpd' then '2.NPL <90dpd to NPL >90dpd'
+    
+
+// 
+
+
+    when calculated NPL_GROUP = '1. Inflows'  and NPL_FLOW = 'C-FPL to NPL >90dpd' then '5.C-FPL to NPL >90dpd'
+    when calculated NPL_GROUP = '1. Inflows'  and NPL_FLOW = 'FPL to FNPL >90dpd ' then '6.FPL to FNPL >90dpd'
+    when calculated NPL_GROUP = '1. Inflows'  and NPL_FLOW = 'FNPL <90dpd to FNPL >90dpd' then '7.FNPL <90dpd to FNPL >90dpd'
+    when calculated NPL_GROUP = '1. Inflows'  and NPL_FLOW = 'FNPL <90dpd to NPL' then '8.FNPL <90dpd to NPL'
+    when calculated NPL_GROUP = '1. Inflows'  and NPL_FLOW = 'New account to 90+' then '9.New account to 90+'
+    when calculated NPL_GROUP = '2.Outflows'  and NPL_FLOW = 'FNPL >90dpd to FNPL <90dpd' then '1.FNPL >90dpd to FNPL <90dpd'
+    when calculated NPL_GROUP = '2.Outflows'  and NPL_FLOW = 'FNPL >90dpd to NPL <90dpd' then '2.FNPL >90dpd to NPL <90dpd'
+    when calculated NPL_GROUP = '2.Outflows'  and NPL_FLOW = 'FNPL >90dpd to FPL' then '3.FNPL >90dpd to FPL'
+    when calculated NPL_GROUP = '2.Outflows'  and NPL_FLOW = 'FNPL >90dpd to PL' then '4.FNPL >90dpd to PL'
+    when calculated NPL_GROUP = '2.Outflows'  and NPL_FLOW = 'NPL to PL' then '5.NPL to PL'
+    when calculated NPL_GROUP = '2.Outflows'  and NPL_FLOW = 'NPL to FNPL <90dpd' then '6.NPL to FNPL <90dpd'
+    when calculated NPL_GROUP = '2.Outflows'  and NPL_FLOW = 'NPL to FPL' then '7.NPL to FPL'
+//  NPL_Flow Change  SKAR 6/3/2023  
+	when calculated NPL_GROUP = '2.Outflows'  and NPL_FLOW = 'NPL >90dpd to <90dpd' then '5.NPL >90dpd to <90dpd'
+    when calculated NPL_GROUP = '2.Outflows'  and NPL_FLOW = 'NPL >90dpd to FNPL <90dpd' then '6.NPL >90dpd to FNPL <90dpd'
+    when calculated NPL_GROUP = '2.Outflows'  and NPL_FLOW = 'NPL >90dpd to FPL <90dpd' then '7.NPL >90dpd to FPL <90dpd'
+
+// 
+    when calculated NPL_GROUP = '2.Outflows'  and NPL_FLOW = 'Exit from 90+' then '8.Exit from 90+'
+    when calculated NPL_GROUP = '3.Other'     and (hfs = '1' or prv_hfs = '1')  AND 
+    Account_Source_System_Code nE 'LEA'              then '1.Due to transfer to/from HFS'
+    when calculated NPL_GROUP = '3.Other'  and NPL_FLOW = '90+ Balance Change'                then '2.90+ Balance Change'
+    when calculated NPL_GROUP = '3.Other'  and NPL_FLOW = '90+ Balance Change/Inflows'        then '3.90+ Balance Change/Inflows'
+    when calculated NPL_GROUP = '3.Other'  and NPL_FLOW = '90+ Balance Change/Outflows'       then '4.90+ Balance Change/Outflows'
+    end as NPL_FLOW_f ,
+    CASE WHEN hfs ne '1' and NPL_Indicator_With_Materiality in ('1' )  then IFRS_Gross_Reported else 0 end as npL_IFRS_Gross_Reported,
+    case when prv_hfs ne '1' and prv_npl_flag in ('1' ) then prv_IFRS_Gross_Reported*primary_indicator else 0 end as npL_PRV_IFRS_Gross_Reported,
+    case when calculated NPL_GROUP =       '1. Inflows'       then calculated npL_IFRS_Gross_Reported  
+             when calculated NPL_GROUP =   '2.Outflows'       then - calculated npL_PRV_IFRS_Gross_Reported
+             when calculated NPL_GROUP =   '3.Other'          then calculated npL_IFRS_Gross_Reported- calculated  npL_PRV_IFRS_Gross_Reported  else 0 end as
+             final_Balance2,
+      PRV_M_HFS_f,
+      PRV_M_IFRS_Gross_Reported,
+      PRV_M_EBA_Status_f,
+      PRV_M_NPL_FLAG_f,
+      Perimeter_ECA6,
+      Step_Up_Indicator_f,
+      Settlements_Indicator_f,
+ 	case when  NPE_FLOW_mom_f in ('C-FPL to FNPL remodified' 'C-FPL to FNPL rolled' 'FPL to FNPL' 'FPL to NPL' 'New account to NPE' 'PL to FNPL' 'PL to NPL' ) then '1. Inflows'
+	when NPE_FLOW_mom_f in ('Exit account from NPE' 'FNPL to FPL' 'FNPL to PL' 'NPL to FPL' 'NPL to PL' ) then '2.Outflows'
+	when NPE_FLOW_mom_f in ('NPE Balance Change' 'NPE Balance Change/Inflows' 'NPE Balance Change/Outflows' )  then '3.Other' end as NPE_GROUP_M
+	,case
+	when calculated NPE_GROUP_M = '1. Inflows'  and NPE_FLOW_mom_f = 'PL to NPL'                       then '1.PL to NPL'
+	when calculated NPE_GROUP_M = '1. Inflows'  and NPE_FLOW_mom_f = 'PL to FNPL'                      then '2.PL to FNPL'
+	when calculated NPE_GROUP_M = '1. Inflows'  and NPE_FLOW_mom_f = 'C-FPL to FNPL rolled'            then '3.C-FPL to FNPL rolled'
+	when calculated NPE_GROUP_M = '1. Inflows'  and NPE_FLOW_mom_f = 'C-FPL to FNPL remodified'        then '4.C-FPL to FNPL remodified'
+	when calculated NPE_GROUP_M = '1. Inflows'  and NPE_FLOW_mom_f = 'FPL to NPL'                      then '5.FPL to NPL'
+	when calculated NPE_GROUP_M = '1. Inflows'  and NPE_FLOW_mom_f = 'FPL to FNPL'                     then '6.FPL to FNPL'
+	when calculated NPE_GROUP_M = '1. Inflows'  and NPE_FLOW_mom_f = 'New account to NPE'              then '7.New account to NPE' 
+	when calculated NPE_GROUP_M = '2.Outflows'  and NPE_FLOW_mom_f = 'FNPL to FPL'                     then '1.FNPL to FPL'
+	when calculated NPE_GROUP_M = '2.Outflows'  and NPE_FLOW_mom_f = 'FNPL to PL'                      then '2.FNPL to PL'
+    when calculated NPE_GROUP_M = '2.Outflows'  and NPE_FLOW_mom_f = 'NPL to FPL'                      then '3.NPL to FPL'
+	when calculated NPE_GROUP_M = '2.Outflows'  and NPE_FLOW_mom_f = 'NPL to PL'                       then '4.NPL to PL'
+	when calculated NPE_GROUP_M = '2.Outflows'  and NPE_FLOW_mom_f = 'Exit account from NPE'           then '5.Exit account from NPE'
+    when calculated NPE_GROUP_M = '3.Other'     and (hfs = '1' or PRV_M_HFS_f = '1') and Account_Source_System_Code nE 'LEA'   then '1.Due to transfer to/from HFS'
+	when calculated NPE_GROUP_M = '3.Other'  and NPE_FLOW_mom_f = 'NPE Balance Change'                 then '2.NPE Balance Change'
+	when calculated NPE_GROUP_M = '3.Other'  and NPE_FLOW_mom_f = 'NPE Balance Change/Inflows'         then '3.NPE Balance Change/Inflows'
+	when calculated NPE_GROUP_M = '3.Other'  and NPE_FLOW_mom_f = 'NPE Balance Change/Outflows'        then '4.NPE Balance Change/Outflows'
+	end as NPE_FLOW_f_m,
+	CASE WHEN hfs ne '1' and eba_status in ('FNPL' 'NPL' )  then IFRS_Gross_Reported else 0 end  as npe_m_IFRS_Gross_Reported,
+	case when PRV_M_HFS_f ne '1' and PRV_M_EBA_Status_f in ('FNPL' 'NPL' ) then PRV_M_IFRS_Gross_Reported*monthly_primary_indicator_f else 0 end as npe_PRV_m_IFRS_Gross_Reported,
+	case when calculated NPE_GROUP_M = '1. Inflows'  then calculated npe_m_IFRS_Gross_Reported  
+	         when calculated NPE_GROUP_M = '2.Outflows'  then - calculated npe_PRV_m_IFRS_Gross_Reported
+	         when calculated NPE_GROUP_M = '3.Other' then calculated npe_m_IFRS_Gross_Reported- calculated  npe_PRV_m_IFRS_Gross_Reported  else 0 end as final_Balance3
+             
+  ,case when  NPl_FLOW_mom_f in ('FNPL <90dpd to FNPL >90dpd' 'FNPL <90dpd to NPL' 'FPL to FNPL >90dpd' 'New account to 90+' 'PL to NPL >90dpd'
+  //  NPL_Flow Change  SKAR 6/3/2023 
+  'PL <90dpd to NPL >90dpd' 'NPL <90dpd to NPL >90dpd'
+	'PL to FNPL >90dpd' 'FPL to NPL >90dpd' 'C-FPL to NPL >90dpd' )                                                                                  then '1. Inflows'
+	when NPl_FLOW_mom_f in ('Exit from 90+' 'FNPL >90dpd to FNPL <90dpd' 'FNPL >90dpd to FPL' 'FNPL >90dpd to PL' 'NPL to FNPL <90dpd' 'NPL to FPL' 'NPL to PL' 
+//  NPL_Flow Change  SKAR 6/3/2023       
+   'NPL >90dpd to <90dpd' 'NPL >90dpd to FNPL <90dpd' 'NPL >90dpd to FPL <90dpd' 
+//     
+	'FNPL >90dpd to NPL <90dpd')                                                                                                                     then  '2.Outflows'
+	when NPl_FLOW_mom_f in ('90+ Balance Change' '90+ Balance Change/Inflows' '90+ Balance Change/Outflows' )                                        then '3.Other' end as NPL_GROUP_M 
+	
+	,case
+	when calculated NPL_GROUP_M = '1. Inflows'  and NPl_FLOW_mom_f = 'PL to NPL >90dpd'                            then '1.PL to NPL >90dpd'
+
+//  NPL_Flow Change  SKAR 6/3/2023  
+when calculated NPL_GROUP_M = '1. Inflows'  and NPl_FLOW_mom_f = 'PL <90dpd to NPL >90dpd'                            then '1.PL <90dpd to NPL >90dpd'
+when calculated NPL_GROUP_M = '1. Inflows'  and NPl_FLOW_mom_f = 'NPL <90dpd to NPL >90dpd'                            then '2.NPL <90dpd to NPL >90dpd'
+
+
+
+
+	when calculated NPL_GROUP_M = '1. Inflows'  and NPl_FLOW_mom_f = 'PL to FNPL >90dpd'                           then '3.PL to FNPL >90dpd'
+	when calculated NPL_GROUP_M = '1. Inflows'  and NPl_FLOW_mom_f = 'FPL to NPL >90dpd'                           then '4.FPL to NPL >90dpd"'
+	when calculated NPL_GROUP_M = '1. Inflows'  and NPl_FLOW_mom_f = 'C-FPL to NPL >90dpd'                         then '5.C-FPL to NPL >90dpd'
+	when calculated NPL_GROUP_M = '1. Inflows'  and NPl_FLOW_mom_f = 'FPL to FNPL >90dpd '                         then '6.FPL to FNPL >90dpd'
+	when calculated NPL_GROUP_M = '1. Inflows'  and NPl_FLOW_mom_f = 'FNPL <90dpd to FNPL >90dpd'                  then '7.FNPL <90dpd to FNPL >90dpd'
+	when calculated NPL_GROUP_M = '1. Inflows'  and NPl_FLOW_mom_f = 'FNPL <90dpd to NPL'                          then '8.FNPL <90dpd to NPL'
+	when calculated NPL_GROUP_M = '1. Inflows'  and NPl_FLOW_mom_f = 'New account to 90+'                          then '9.New account to 90+'
+	when calculated NPL_GROUP_M = '2.Outflows'  and NPl_FLOW_mom_f = 'FNPL >90dpd to FNPL <90dpd'                  then '1.FNPL >90dpd to FNPL <90dpd'
+	when calculated NPL_GROUP_M = '2.Outflows'  and NPl_FLOW_mom_f = 'FNPL >90dpd to NPL <90dpd'                   then '2.FNPL >90dpd to NPL <90dpd'
+	when calculated NPL_GROUP_M = '2.Outflows'  and NPl_FLOW_mom_f = 'FNPL >90dpd to FPL'                          then '3.FNPL >90dpd to FPL'
+	when calculated NPL_GROUP_M = '2.Outflows'  and NPl_FLOW_mom_f = 'FNPL >90dpd to PL'                           then '4.FNPL >90dpd to PL'
+	when calculated NPL_GROUP_M = '2.Outflows'  and NPl_FLOW_mom_f = 'NPL to PL'                                   then '5.NPL to PL'
+	when calculated NPL_GROUP_M = '2.Outflows'  and NPl_FLOW_mom_f = 'NPL to FNPL <90dpd'                          then '6.NPL to FNPL <90dpd'
+	when calculated NPL_GROUP_M = '2.Outflows'  and NPl_FLOW_mom_f = 'NPL to FPL'                                  then '7.NPL to FPL'
+
+
+//  NPL_Flow Change  SKAR 6/3/2023  
+when calculated NPL_GROUP_M = '2.Outflows'  and NPl_FLOW_mom_f = 'NPL >90dpd to <90dpd'                                   then '5.NPL >90dpd to <90dpd'
+	when calculated NPL_GROUP_M = '2.Outflows'  and NPl_FLOW_mom_f = 'NPL >90dpd to FNPL <90dpd'                          then '6.NPL >90dpd to FNPL <90dpd'
+	when calculated NPL_GROUP_M = '2.Outflows'  and NPl_FLOW_mom_f = 'NPL >90dpd to FPL <90dpd'                                  then '7.NPL >90dpd to FPL <90dpd'
+
+
+
+	when calculated NPL_GROUP_M = '2.Outflows'  and NPl_FLOW_mom_f = 'Exit from 90+'                               then '8.Exit from 90+'
+    when calculated NPL_GROUP_M = '3.Other'     and (hfs = '1' or PRV_M_HFS_f = '1')  AND 
+    Account_Source_System_Code nE 'LEA'              then '1.Due to transfer to/from HFS'
+	when calculated NPL_GROUP_M = '3.Other'     and NPl_FLOW_mom_f = '90+ Balance Change'                          then '2.90+ Balance Change'
+	when calculated NPL_GROUP_M = '3.Other'     and NPl_FLOW_mom_f = '90+ Balance Change/Inflows'                  then '3.90+ Balance Change/Inflows'
+	when calculated NPL_GROUP_M = '3.Other'     and NPl_FLOW_mom_f = '90+ Balance Change/Outflows'                 then '4.90+ Balance Change/Outflow'
+	end as NPL_FLOW_f_m,
+    
+	CASE WHEN hfs ne '1' and NPL_Indicator_With_Materiality in ('1' )  then IFRS_Gross_Reported else 0 end  as npL_m_IFRS_Gross_Reported,
+	case when PRV_M_HFS_f ne '1' and PRV_M_NPL_FLAG_f in ('1' ) then PRV_M_IFRS_Gross_Reported*monthly_primary_indicator_f else 0 end as npL_PRV_m_IFRS_Gross_Reported,
+	case when calculated NPL_GROUP_M = '1. Inflows'  then calculated npL_m_IFRS_Gross_Reported  
+	         when calculated NPL_GROUP_M = '2.Outflows'  then - calculated npL_PRV_m_IFRS_Gross_Reported
+	         when calculated NPL_GROUP_M = '3.Other' then calculated npL_m_IFRS_Gross_Reported- calculated  npL_PRV_m_IFRS_Gross_Reported  else 0 end as final_Balance4,
+            
+   Project_Finance_Indicator
+     
+            
+        
+
+FROM GR_HISDT.HIST_AGGR_UNIONS
